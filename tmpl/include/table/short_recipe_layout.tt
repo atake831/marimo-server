@@ -1,0 +1,47 @@
+[% IF defined(entries) %]
+
+<table border="2">
+    <tr>
+        <td>投稿者</td>
+        <td>タイトル</td>
+        <td>調理時間</td>
+        <td>気になる！</td>
+        <td>タグ</td>
+        <td>レシピ化</td>
+    </tr>
+
+    [% FOR entry IN entries %]
+    [% IF defined(flag_notice) %] 
+        [% IF entry.flag_checked == 0 %]
+            <tr class="new_notice">
+        [% else %]
+            <tr>
+        [% END %]
+    [% ELSE %]
+        <tr>
+    [% END %]
+        <td>
+            [% INCLUDE 'include/table/user_name.tt' WITH entry = entry %]
+        </td> 
+        <td>
+            [% INCLUDE 'include/table/title.tt' WITH 
+                entry = entry, entry_type = 'short_recipe' %]
+        </td>
+        <td>[% entry.cooking_time_m * -1 %]</td>
+        <td>
+            [% INCLUDE 'include/table/kininaru_button.tt' WITH entry = entry %]
+        </td>
+        <td>
+            [% FOR tag IN short_recipe_id_tags_list[entry.id] %]
+                [% INCLUDE 'include/table/tag_name.tt' WITH tag = tag, entry_type = 'short_recipe' %]
+            [% END %]
+        </td>
+        <td>
+            [% INCLUDE 'include/table/button_made_recipe.tt' WITH entry = entry %]
+        </td>
+    <tr>
+    [% END %]
+
+</table>
+
+[% END %]

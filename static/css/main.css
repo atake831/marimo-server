@@ -1,0 +1,37 @@
+body {
+    margin-top: 50px;
+}
+
+div.rakuuma button.clicked {
+    background-color: red;
+}
+
+div.rakuuma button.not_clicked {
+    background-color: blue;
+}
+
+div.kininaru button.clicked {
+    background-color: red;
+}
+
+div.kininaru button.not_clicked {
+    background-color: blue;
+}
+
+.new_notice {
+    background-color: yellow;
+}
+
+footer {
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 2px; }
+    footer a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+/* smart phones */
+@media screen and (max-device-width: 480px) {
+}

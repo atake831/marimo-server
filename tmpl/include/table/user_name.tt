@@ -1,0 +1,9 @@
+[% IF defined(entry) && defined(user_id_name_list) %]
+    [% IF user_id == entry.user_id %]
+        <a href="/my">[% user_id_name_list[entry.user_id] %]</a>
+    [% ELSIF user_id_name_list[entry.user_id] != '' %]
+        <a href="/user/[% entry.user_id %]">[% user_id_name_list[entry.user_id] %]</a>
+    [% ELSE %]
+        退会済み
+    [% END %]
+[% END %]

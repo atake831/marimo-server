@@ -1,0 +1,33 @@
+[% IF defined(entries) %]
+
+<table border="1">
+    <tr>
+        <td>投稿者</td>
+        <td>タイトル</td>
+        <td>調理時間</td>
+        <td>らくうま！</td>
+        <td>タグ</td>
+    </tr>
+
+    [% FOR entry IN entries %]
+    <tr>
+        <td>
+            [% INCLUDE 'include/table/user_name.tt' WITH entry = entry %]
+        </td> 
+        <td>
+            [% INCLUDE 'include/table/title.tt' WITH 
+                entry = entry, entry_type = 'recipe' %]
+        </td>
+        <td>[% entry.cooking_time_m * -1 %]</td>
+        <td>[% entry.rakuuma_point %]</td>
+        <td>
+            [% FOR tag IN recipe_id_tags_list[entry.id] %]
+                [% INCLUDE 'include/table/tag_name.tt' WITH tag = tag, entry_type = 'recipe' %]
+            [% END %]
+        </td>
+    <tr>
+    [% END %]
+
+</table>
+
+[% END %]

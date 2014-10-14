@@ -1,0 +1,45 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<form class="form" action="/short_recipe/create" method="POST">
+
+    タイトル
+    [% IF defined(user_input_values) %]
+        <input type="text" name="title" value="[% user_input_values.title %]" />
+    [% ELSE %]
+        <input type="text" name="title" />
+    [% END %]
+
+    <br>
+
+    [% IF defined(user_input_values) %]
+        <input type="hidden" value="[% user_input_values.tags %]" name="tags" id="tag-input" />
+    [% ELSE %]
+        <input type="hidden" value="" name="tags" id="tag-input" />
+    [% END %]
+
+    <br>
+
+    調理時間
+    <select name="cooking_time_m">
+        [% FOR cooking_time IN [1..9] %]
+        <option 
+            [% IF defined(user_input_values) && user_input_values.cooking_time_m == cooking_time * -1 %]
+                selected
+            [% END %] 
+            value="-[% cooking_time %]">[% cooking_time %]分</option>
+        [% END %]
+        <option 
+            [% IF defined(user_input_values) && user_input_values.cooking_time_m == -10 %]
+                selected
+            [% END %] 
+            value="-10">10分以上</option>
+    </select>
+
+    <br>
+
+    <input class="submit" type="submit" value="投稿する" />
+</form>
+
+[% END %]

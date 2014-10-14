@@ -1,0 +1,53 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+<form class="form" action="/account/update" method="POST">
+
+    ユーザー設定 
+
+    <br>
+
+    ログインID：
+    [% user.login_id %]
+    <input type="hidden" name="login_id" value="[% user.login_id %]" />
+
+    <br>
+
+    氏名(漢字)
+    <input type="text" name="surname_kanji" value="[% user.surname_kanji %]" />
+    <input type="text" name="name_kanji" value="[% user.name_kanji %]" />
+
+    <br>
+
+    氏名(ひらがな)
+    <input type="text" name="surname_hiragana" value="[% user.surname_hiragana %]" />
+    <input type="text" name="name_hiragana" value="[% user.name_hiragana %]" />
+
+    <br>
+
+    メールアドレス 
+    <input type="text" name="mail_address" value="[% user.mail_address %]" />
+
+    <br>
+
+    パスワード
+    <input type="text" name="password" />
+
+    <br>
+
+    パスワード確認
+    <input type="text" name="password_confirm" />
+
+    <br>
+
+    <input class="submit" type="submit" value="更新" />
+
+</form>
+
+<br>
+<input type="button" onclick="location.href='/account/delete'"value="退会する">
+
+[% END %]

@@ -1,0 +1,60 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+レシピ編集
+
+<br>
+
+
+<form action="/recipe/detail/[% recipe.id %]/update" method="POST">
+    [% recipe.title %]
+
+    <br>
+    <input type="hidden" value="[% tags_text %]" name="tags" id="tag-input" />
+    <br>
+
+    <br>
+
+    らくうま数：[% recipe.rakuuma_point %]
+    <br>
+
+    調理時間：
+    [% IF recipe.cooking_time_m == -10 %]
+        10分以上
+    [% ELSE %]
+        [% recipe.cooking_time_m * -1 %]分
+    [% END %]
+
+    <br>
+    洗い物の数：
+    [% IF recipe.num_washing_m == -10 %]
+        10個以上
+    [% ELSE %]
+        [% recipe.num_washing_m * -1 %]分
+    [% END %]
+
+    <br>
+    材料：[% recipe.materials %]
+
+    <br>
+    調理方法：
+    <br>
+    [% recipe.how_to_cook %]
+
+    <br>
+    らくテク！
+    <br>
+    [% recipe.rakuteku %]
+
+    <br>
+    <input type="submit" value="更新">
+</form>
+
+<form class="form" action="/recipe/detail/[% recipe.id %]/delete" method="POST">
+    <input class="submit" type="submit" value="削除">
+</form>
+
+[% END %]

@@ -1,0 +1,43 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+らくらく投稿編集
+
+<br>
+
+
+<form action="/short_recipe/detail/[% short_recipe.id %]/update" method="POST">
+
+    [% short_recipe.title %]
+
+    <br>
+    <br>
+
+    <input type="hidden" value="[% tags_text %]" name="tags" id="tag-input" />
+
+    <br>
+
+    気になる数：[% short_recipe.kininaru_point %]
+    <br>
+
+    調理時間：
+    [% IF short_recipe.cooking_time_m == -10 %]
+        10分以上
+    [% ELSE %]
+        [% short_recipe.cooking_time_m * -1 %]分
+    [% END %]
+
+    <br>
+    <br>
+
+    <input type="submit" value="更新">
+</form>
+
+<form class="form" action="/short_recipe/detail/[% short_recipe.id %]/delete" method="POST">
+    <input class="submit" type="submit" value="削除">
+</form>
+
+[% END %]

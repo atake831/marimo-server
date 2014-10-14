@@ -1,0 +1,31 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+[% user_name %] さんのページ
+
+<br>
+<br>
+らくらく投稿
+<input type="button" onclick="location.href='/short_recipe/create'"value="らくらく投稿する">
+<input type="button" onclick="location.href='/user/[% target_user_id %]/short_recipe'"value="もっと見る">
+[% INCLUDE 'include/table/short_recipe_layout.tt' WITH entries = short_recipes %]
+<br>
+<br>
+
+投稿レシピ
+<input type="button" onclick="location.href='/recipe/create'"value="レシピを投稿する">
+<input type="button" onclick="location.href='/user/[% target_user_id %]/recipe'"value="もっと見る">
+[% INCLUDE 'include/table/recipe_layout.tt' WITH entries = recipes %]
+<br>
+<br>
+
+らくうま！レシピ
+<input type="button" onclick="location.href='/user/[% target_user_id %]/rakuuma_recipe'"value="もっと見る">
+[% INCLUDE 'include/table/recipe_layout.tt' WITH entries = rakuuma_recipes %]
+<br>
+
+
+[% END %]

@@ -1,0 +1,5 @@
+[% WRAPPER 'include/layout.tt' %]
+
+指定したユーザーは退会済みです。
+
+[% END %]

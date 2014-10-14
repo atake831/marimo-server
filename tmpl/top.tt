@@ -1,0 +1,30 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+トップページ
+
+<br>
+
+デイリーランキング
+<input type="button" onclick="location.href='/recipe/list/ranking'"value="もっと見る">
+[% INCLUDE 'include/table/recipe_layout.tt' WITH entries = recipe_ranking %]
+<input type="button" onclick="location.href='/recipe/create'"value="レシピを投稿する">
+<br>
+<br>
+
+新着らくらく投稿
+<input type="button" onclick="location.href='/short_recipe/list/new'"value="もっと見る">
+[% INCLUDE 'include/table/short_recipe_layout.tt' WITH entries = new_short_recipes %]
+<input type="button" onclick="location.href='/short_recipe/create'"value="らくらく投稿する">
+<br>
+<br>
+
+新着順レシピ一覧
+<input type="button" onclick="location.href='/recipe/list/new'"value="もっと見る">
+[% INCLUDE 'include/table/recipe_layout.tt' WITH entries = new_recipes %]
+<input type="button" onclick="location.href='/recipe/create'"value="レシピを投稿する">
+
+[% END %]

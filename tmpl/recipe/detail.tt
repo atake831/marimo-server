@@ -1,0 +1,58 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+レシピ詳細
+
+<br>
+投稿者名
+[% IF user_id_name_list[recipe.user_id] != '' %]
+    [% user_id_name_list[recipe.user_id] %]
+[% ELSE %]
+    退会済み
+[% END %]
+<br>
+
+[% recipe.title %]
+
+<br>
+[% FOR tag IN recipe_id_tags_list[recipe.id] %]
+    [% INCLUDE 'include/table/tag_name.tt' WITH tag = tag, entry_type = 'recipe' %]
+[% END %]
+<br>
+
+らくうま数：
+    [% INCLUDE 'include/table/rakuuma_button.tt' WITH entry = recipe %]
+<br>
+
+調理時間：
+[% IF recipe.cooking_time_m == -10 %]
+    10分以上
+[% ELSE %]
+    [% recipe.cooking_time_m * -1 %]分
+[% END %]
+
+<br>
+洗い物の数：
+[% IF recipe.num_washing_m == -10 %]
+    10個以上
+[% ELSE %]
+    [% recipe.num_washing_m * -1 %]分
+[% END %]
+
+<br>
+材料：[% recipe.materials %]
+
+<br>
+調理方法：
+<br>
+[% recipe.how_to_cook %]
+
+<br>
+らくテク！
+<br>
+[% recipe.rakuteku %]
+
+[% END %]

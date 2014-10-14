@@ -1,0 +1,45 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+マイページ
+
+<input type="button" onclick="location.href='/account/setting'"value="設定">
+<br>
+ようこそ！[% user_name %] さん
+<br>
+<div class="notice">
+    [% IF defined(notice_count) %]
+        <a href="/my/notice">お知らせ[% notice_count %]件</a>
+    [% ELSE %]
+        お知らせ0件
+    [% END %]
+</div>
+<br>
+
+マイらくらく投稿
+<input type="button" onclick="location.href='/short_recipe/create'"value="らくらく投稿する">
+<input type="button" onclick="location.href='/my/short_recipe'"value="もっと見る">
+[% INCLUDE 'include/table/short_recipe_layout.tt' WITH entries = short_recipes %]
+<br>
+<br>
+
+マイレシピ
+<input type="button" onclick="location.href='/recipe/create'"value="レシピを投稿する">
+<input type="button" onclick="location.href='/my/recipe'"value="もっと見る">
+[% INCLUDE 'include/table/recipe_layout.tt' WITH entries = recipes %]
+<br>
+<br>
+
+マイらくうま！レシピ
+<input type="button" onclick="location.href='/my/rakuuma_recipe'"value="もっと見る">
+[% INCLUDE 'include/table/recipe_layout.tt' WITH entries = rakuuma_recipes %]
+<br>
+
+<a href="/account/logout">ログアウト</a>
+
+<br>
+
+[% END %]

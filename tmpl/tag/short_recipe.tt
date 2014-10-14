@@ -1,0 +1,21 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+[% tag_name %]タグのらくらく投稿一覧
+
+<br>
+
+<a href="/tag/list">タグ一覧</a>
+
+<br>
+
+<a href="/tag/[% tag.id %]/recipe">「[% tag.tag_name %]」タグのレシピ一覧</a>
+
+[% INCLUDE 'include/table/short_recipe_layout.tt' WITH entries = entries %]
+
+[% INCLUDE 'include/pager.tt' WITH pager=pager %]
+
+[% END %]

@@ -1,0 +1,21 @@
+[% IF defined(entry) %]
+    <p id="[% entry.id %]" class="kininaru_point">[% entry.kininaru_point %]</p>
+    [% IF defined(short_recipe_id_flag_kininaru_list) %]
+        [% IF defined(user_id) %]
+            <div class="kininaru">
+                [% IF entry.user_id != user_id %]
+                    [% IF short_recipe_id_flag_kininaru_list[entry.id] %]
+                        <button id="[% entry.id %]" class="clicked">気になる！</button>
+                    [% ELSE %]
+                        <button id="[% entry.id %]" class="not_clicked">気になる！</button>
+                    [% END %]
+                    <form action="" method="POST">
+                        <input id="[% entry.id %]" class="short_recipe_id" type="hidden" value="[% entry.id %]" />
+                    </form>
+                [% END %]
+            </div>
+        [% ELSE %]
+            <button onclick="location.href='/account/login'" class="not_clicked">気になる！</button>
+        [% END %]
+    [% END %]
+[% END %]

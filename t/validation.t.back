@@ -1,0 +1,144 @@
+#!/usr/bin/perl 
+
+use strict;
+use warnings;
+
+use Test::More;
+
+BEGIN { use_ok('lib::model::Validation') };
+
+my @test_cases = (
+   # _is_number
+    [
+        [0,1],
+        ["01",1],
+        [99999999,1],
+        ["090909090",1],
+        ["0090",1],
+        ["0",1],
+        ["01",1],
+        ["9999",1],
+        ["0000",1],
+        [-1,0],
+        ["-01",0],
+        ["-00",0],
+        ["abc",0],
+        ["0ag",0],
+        ["abd10",0],
+        [undef,0],
+    ],
+    # valid_course_id
+    [
+        ["KDD-LINUX01",1],
+        ["----",1],
+        ["0000",1],
+        ["12345678901234567890",1],
+        ["a" x 21,0],
+        ["=",0],
+        ["%test",0],
+        ['test$',0],
+        ["KED^jai",0],
+        ["",0],
+        [undef, 0],
+    ],
+    # _valid_course_title
+    [
+        ["title test",1],
+        ["a" x 50 ,1],
+        ["a" x 51,0],
+        [" test",1],
+        ["test ",1],
+        ["00 aa AA",1],
+        ["=",0],
+        ["%test",0],
+        ['test$',0],
+        ["KED^jai",0],
+        ["",0],
+        [undef,0],
+
+    ],
+    # _valid_topic
+    [
+        ["topic",1],
+        ["",1],
+        ["a" x 100,1],
+        ["a" x 101,0],
+        ["~-|~=`{?}",1],
+    ],
+    # _valid_day_length
+    [
+        [1,1],
+        [99,1],
+        ["01",1],
+        [0,0],
+        [100,0],
+        ["abc",0],
+        [undef,0],
+    ],
+    # _valid_price
+    [
+        [0,1],
+        [999999,1],
+        ["01",1],
+        [-1,0],
+        [1000000,0],
+        ["abc",0],
+        [undef,0],
+    ],
+    # _valid_level_id
+    [
+        [1,1],
+        [5,1],
+        ["01",1],
+        [0,0],
+        [6,0],
+        ["abc",0],
+        [undef,0],
+    ],
+    # _valid_category
+    [
+        ["Category",1],
+        ["category01",1],
+        ["0category",1],
+        ["a" x 40,1],
+        ["a" x 41,0],
+        ["=",0],
+        ["%test",0],
+        ['test$',0],
+        ["KED^jai",0],
+        [" ",0],
+        ["",0],
+        [" test",0],
+        ["tes t",0],
+    ],
+    
+);
+
+my $cnt_test_case = 1; # use_ok分
+foreach ( @test_cases ){
+    $cnt_test_case += scalar @$_;
+}
+
+my @funcs = (
+    \&Validation::_is_number,
+    \&Validation::_valid_course_id,
+    \&Validation::_valid_course_title,
+    \&Validation::_valid_topic,
+    \&Validation::_valid_day_length,
+    \&Validation::_valid_price,
+    \&Validation::_valid_level_id,
+    \&Validation::_valid_category,
+);
+
+for ( my $n = 0; $n < @test_cases ; $n++ ) {
+    for my $test_case (@{$test_cases[$n]}){
+        my ($arg,$expected) = @$test_case;
+        my $_arg = defined($arg) ? $arg : "undef";
+        print "arg: $_arg expected: $expected $n\n";
+        is( $funcs[$n]->($arg), $expected );
+    }
+}
+
+plan(tests=>$cnt_test_case);
+
+1;

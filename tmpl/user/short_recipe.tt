@@ -1,0 +1,16 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+[% user_name %]さんの
+らくらく投稿一覧
+
+<br>
+
+[% INCLUDE 'include/table/short_recipe_layout.tt' WITH entries = entries %]
+
+[% INCLUDE 'include/pager.tt' WITH pager=pager %]
+
+[% END %]

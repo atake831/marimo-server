@@ -1,0 +1,38 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+レシピ詳細
+
+<br>
+
+投稿者名
+[% IF user_id_name_list[short_recipe.user_id] != '' %]
+    [% user_id_name_list[short_recipe.user_id] %]
+[% ELSE %]
+    退会済み
+[% END %]
+<br>
+
+[% short_recipe.title %]
+
+<br>
+[% FOR tag IN short_recipe_id_tags_list[short_recipe.id] %]
+    [% INCLUDE 'include/table/tag_name.tt' WITH tag = tag, entry_type = 'short_recipe' %]
+[% END %]
+<br>
+
+気になる数：
+    [% INCLUDE 'include/table/kininaru_button.tt' WITH entry = short_recipe %]
+
+<br>
+調理時間：
+[% IF short_recipe.cooking_time_m == -10 %]
+    10分以上
+[% ELSE %]
+    [% short_recipe.cooking_time_m * -1 %]分
+[% END %]
+
+[% END %]

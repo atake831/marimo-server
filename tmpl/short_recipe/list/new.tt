@@ -1,0 +1,17 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+新着順らくらく投稿一覧
+
+<br>
+
+<a href="/short_recipe/list/ranking">気になる順</a>
+
+[% INCLUDE 'include/table/short_recipe_layout.tt' WITH entries = entries %]
+
+[% INCLUDE 'include/pager.tt' WITH pager=pager %]
+
+[% END %]

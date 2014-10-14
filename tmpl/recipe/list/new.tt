@@ -1,0 +1,17 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+新着順レシピ一覧
+
+<br>
+
+<a href="/recipe/list/ranking">デイリーランキング</a>
+
+[% INCLUDE 'include/table/recipe_layout.tt' WITH entries = entries %]
+
+[% INCLUDE 'include/pager.tt' WITH pager = pager %]
+
+[% END %]

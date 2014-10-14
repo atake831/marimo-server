@@ -1,0 +1,53 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+レシピ投稿確認画面
+
+<br>
+
+[% recipe.title %]
+
+<br>
+[% recipe.tags %]
+<br>
+
+調理時間：[% recipe.cooking_time_m * -1 %]
+
+<br>
+洗い物の数：[% recipe.num_washing_m * -1 %]
+
+<br>
+材料：[% recipe.materials %]
+
+<br>
+調理方法：
+<br>
+[% recipe.how_to_cook %]
+
+<br>
+らくテク！
+<br>
+[% recipe.rakuteku %]
+
+<br>
+
+<form class="form" action="/recipe/create" method="POST">
+    <input class="submit" type="submit" value="この内容で投稿する" />
+    [% IF defined(recipe.id) %]
+        <input type="hidden" name="id" value="[% recipe.id %]" />
+    [% END %]
+    <input type="hidden" name="title" value="[% recipe.title %]" />
+    <input type="hidden" name="tags" value="[% recipe.tags %]" />
+    <input type="hidden" name="cooking_time_m" value="[% recipe.cooking_time_m %]" />
+    <input type="hidden" name="num_washing_m" value="[% recipe.num_washing_m %]" />
+    <input type="hidden" name="materials" value="[% recipe.materials %]" />
+    <input type="hidden" name="how_to_cook" value="[% recipe.how_to_cook %]" />
+    <input type="hidden" name="rakuteku" value="[% recipe.rakuteku %]" />
+</form>
+
+
+
+[% END %]

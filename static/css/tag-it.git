@@ -1,0 +1,1159 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html class="   ">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>aehlke/tag-it · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <meta property="fb:app_id" content="1401488693436528"/>
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="aehlke/tag-it" name="twitter:title" /><meta content="tag-it - A jQuery UI plugin to handle multi-tag fields as well as tag suggestions/autocomplete." name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/71601?s=400" name="twitter:image:src" />
+<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/71601?s=400" property="og:image" /><meta content="aehlke/tag-it" property="og:title" /><meta content="https://github.com/aehlke/tag-it" property="og:url" /><meta content="tag-it - A jQuery UI plugin to handle multi-tag fields as well as tag suggestions/autocomplete." property="og:description" />
+
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_source" data-pjax-transient />
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="1B830BFE:4109:D874D23:53A7BF6F" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico" />
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="lIJ9ota1fLYxkAz4KVVRodcx6O+yWV51eOZn1Enbvd8uOzvIPv8oUzfV4mOsRiVolKAcTOBuXYuZ/acoYKjD0Q==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-eb5c3c423cbc57fa389bbe6f9a4bb3a6ce0cf4cf.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github2-56e008b7d97b268cc33e7f96ed49822d7fc3367f.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+    <meta http-equiv="x-pjax-version" content="996bc2eb6e3462b6270ddd64255dc644">
+
+      
+  <meta name="description" content="tag-it - A jQuery UI plugin to handle multi-tag fields as well as tag suggestions/autocomplete." />
+
+
+  <meta content="71601" name="octolytics-dimension-user_id" /><meta content="aehlke" name="octolytics-dimension-user_login" /><meta content="1333726" name="octolytics-dimension-repository_id" /><meta content="aehlke/tag-it" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="1333726" name="octolytics-dimension-repository_network_root_id" /><meta content="aehlke/tag-it" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/aehlke/tag-it/commits/master.atom" rel="alternate" title="Recent Commits to tag-it:master" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Faehlke%2Ftag-it">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  in-repository">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+        <li class="features"><a href="/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<div class="commandbar">
+  <span class="message"></span>
+  <input type="text" data-hotkey="s, /" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+      data-repo="aehlke/tag-it"
+      data-branch="master"
+      data-sha="6c3251d69a377e4873b868110d9a45ce033b80bb"
+  >
+  <div class="display hidden"></div>
+</div>
+
+    <input type="hidden" name="nwo" value="aehlke/tag-it" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+
+  <li>
+      <a href="/login?return_to=%2Faehlke%2Ftag-it"
+    class="minibutton with-count star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/aehlke/tag-it/stargazers">
+      1,390
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Faehlke%2Ftag-it"
+        class="minibutton with-count js-toggler-target fork-button tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/aehlke/tag-it/network" class="social-count">
+        520
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/aehlke" class="url fn" itemprop="url" rel="author"><span itemprop="title">aehlke</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/aehlke/tag-it" class="js-current-repository js-repo-home-link">tag-it</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline js-new-discussion-timeline with-full-navigation ">
+        <div class="repository-sidebar clearfix">
+            
+
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped tooltipped-w" aria-label="Code">
+        <a href="/aehlke/tag-it" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /aehlke/tag-it">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped tooltipped-w" aria-label="Issues">
+          <a href="/aehlke/tag-it/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g i" data-selected-links="repo_issues /aehlke/tag-it/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>124</span>
+            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+        <a href="/aehlke/tag-it/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g p" data-selected-links="repo_pulls /aehlke/tag-it/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>34</span>
+            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped tooltipped-w" aria-label="Pulse">
+        <a href="/aehlke/tag-it/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /aehlke/tag-it/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Graphs">
+        <a href="/aehlke/tag-it/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /aehlke/tag-it/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Network">
+        <a href="/aehlke/tag-it/network" aria-label="Network" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-selected-links="repo_network /aehlke/tag-it/network">
+          <span class="octicon octicon-repo-forked"></span> <span class="full-word">Network</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+              <div class="only-with-full-nav">
+                
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/aehlke/tag-it.git" readonly="readonly">
+    <span class="url-box-clippy">
+    <button aria-label="copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/aehlke/tag-it.git" data-copied-hint="copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/aehlke/tag-it" readonly="readonly">
+    <span class="url-box-clippy">
+    <button aria-label="copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/aehlke/tag-it" data-copied-hint="copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>
+      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+
+                <a href="/aehlke/tag-it/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   aria-label="Download aehlke/tag-it as a zip file"
+                   title="Download aehlke/tag-it as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+<span id="js-show-full-navigation"></span>
+
+<div class="repository-meta js-details-container ">
+    <div class="repository-description js-details-show">
+      <p>A jQuery UI plugin to handle multi-tag fields as well as tag suggestions/autocomplete.</p>
+    </div>
+
+    <div class="repository-website js-details-show">
+      <p><a href="http://aehlke.github.com/tag-it/" rel="nofollow">http://aehlke.github.com/tag-it/</a></p>
+    </div>
+
+
+</div>
+
+<div class="capped-box overall-summary ">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/aehlke/tag-it/commits/master">
+            <span class="num">
+              <span class="octicon octicon-history"></span>
+              236
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/aehlke/tag-it/branches">
+          <span class="num">
+            <span class="octicon octicon-git-branch"></span>
+            2
+          </span>
+          branches
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="/aehlke/tag-it/releases">
+          <span class="num">
+            <span class="octicon octicon-tag"></span>
+            1
+          </span>
+          release
+        </a>
+      </li>
+
+      <li>
+        
+  <a href="/aehlke/tag-it/graphs/contributors">
+    <span class="num">
+      <span class="octicon octicon-organization"></span>
+      25
+    </span>
+    contributors
+  </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/aehlke/tag-it/search?l=javascript">
+                <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                <span class="lang">JavaScript</span>
+                <span class="percent">75.0%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/aehlke/tag-it/search?l=css">
+                <span class="color-block language-color" style="background-color:#563d7c;"></span>
+                <span class="lang">CSS</span>
+                <span class="percent">23.9%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/aehlke/tag-it/search?l=shell">
+                <span class="color-block language-color" style="background-color:#5861ce;"></span>
+                <span class="lang">Shell</span>
+                <span class="percent">1.0%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="tooltipped tooltipped-s" aria-label="Show language statistics">
+    <a href="#"
+     class="repository-lang-stats-graph js-toggle-lang-stats"
+     style="background-color:#5861ce">
+  <span class="language-color" style="width:75.0%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span><span class="language-color" style="width:23.9%; background-color:#563d7c;" itemprop="keywords">CSS</span><span class="language-color" style="width:1.0%; background-color:#5861ce;" itemprop="keywords">Shell</span>
+    </a>
+  </div>
+
+
+
+<div class="file-navigation in-mid-page">
+  <a href="/aehlke/tag-it/find/master"
+        class="js-show-file-finder minibutton empty-icon tooltipped tooltipped-s right"
+        data-pjax
+        data-hotkey="t"
+        aria-label="Quickly jump between files">
+    <span class="octicon octicon-list-unordered"></span>
+  </a>
+    <a href="/aehlke/tag-it/compare" aria-label="Compare, review, create a pull request" class="minibutton compact primary tooltipped tooltipped-s" aria-label="Compare &amp; review" data-pjax>
+      <span class="octicon octicon-git-compare"></span>
+    </a>
+
+  
+
+<div class="select-menu js-menu-container js-select-menu" >
+  <span class="minibutton select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    title="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div><!-- /.select-menu-tabs -->
+      </div><!-- /.select-menu-filters -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/aehlke/tag-it/tree/gh-pages"
+                 data-name="gh-pages"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="gh-pages">gh-pages</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/aehlke/tag-it/tree/master"
+                 data-name="master"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="master">master</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/aehlke/tag-it/tree/v2.0"
+                 data-name="v2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="v2.0">v2.0</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+
+
+  <div class="breadcrumb"><span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/aehlke/tag-it" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">tag-it</span></a></span></span><span class="separator"> / </span><form action="/login?return_to=%2Faehlke%2Ftag-it" aria-label="Sign in to make or propose changes" class="js-new-blob-form tooltipped tooltipped-e new-file-link" method="post"><span aria-label="Sign in to make or propose changes" class="js-new-blob-submit octicon octicon-plus" data-test-id="create-new-git-file" role="button"></span></form></div>
+</div>
+
+
+
+
+  
+  <div class="commit commit-tease js-details-container" >
+    <p class="commit-title ">
+        <a href="/aehlke/tag-it/commit/65d6fb4dad833bf490f2a7b27063ecd08f792ede" class="message" data-pjax="true" title="fix autocomplete css for zendesk theme">fix autocomplete css for zendesk theme</a>
+        
+    </p>
+    <div class="commit-meta">
+      <button aria-label="Copy SHA" class="js-zeroclipboard zeroclipboard-link" data-clipboard-text="65d6fb4dad833bf490f2a7b27063ecd08f792ede" data-copied-hint="copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/aehlke/tag-it/commit/65d6fb4dad833bf490f2a7b27063ecd08f792ede" class="sha-block" data-pjax>latest commit <span class="sha">65d6fb4dad</span></a>
+
+      <div class="authorship">
+        <img alt="Alex Ehlke" class="gravatar js-avatar" data-user="71601" height="20" src="https://avatars2.githubusercontent.com/u/71601?s=140" width="20" />
+        <span class="author-name"><a href="/aehlke" data-skip-pjax="true" rel="author">aehlke</a></span>
+        authored <time class="updated" datetime="2013-10-12T03:44:53-04:00" is="relative-time">October 12, 2013</time>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="file-wrap">
+    <table class="files" data-pjax>
+
+      
+<tbody class=""
+  data-url="/aehlke/tag-it/file-list/master"
+  data-deferred-content-error="Failed to load latest commit information.">
+
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/aehlke/tag-it/tree/master/.githooks" class="js-directory-link" id="6cd82c067add962b3e1da8c7be7e980c-7ebe97f2ad81242d30289f3b476be87279f5b471" title=".githooks">.githooks</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/aehlke/tag-it/commit/9afa0a829ba0cf3e676b9c61a352629c692cbcb6" class="message" data-pjax="true" title="use makefile instead of individual scripts">use makefile instead of individual scripts</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2012-12-11T21:37:33Z" is="time-ago">December 11, 2012</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/aehlke/tag-it/tree/master/_static" class="js-directory-link" id="e05649d05b9de1ecdc81fd385064ff41-8e45e4ae6f2b35c316b6ceb90b7ad36270b3bf5e" title="_static">_static</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/aehlke/tag-it/commit/439a5b32a65e0e710ae7162fd5c0eb05a3f34aa1" class="message" data-pjax="true" title="fix homepage styling">fix homepage styling</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2012-12-08T00:07:46Z" is="time-ago">December 07, 2012</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/aehlke/tag-it/tree/master/css" class="js-directory-link" id="c7a628cba22e28eb17b5f5c6ae2a266a-3d303cbe26e595b09da5483ab9ad886f972a22ee" title="css">css</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/aehlke/tag-it/commit/65d6fb4dad833bf490f2a7b27063ecd08f792ede" class="message" data-pjax="true" title="fix autocomplete css for zendesk theme">fix autocomplete css for zendesk theme</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2013-10-12T07:44:55Z" is="time-ago">October 12, 2013</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/aehlke/tag-it/tree/master/js" class="js-directory-link" id="32981a13284db7a021131df49e6cd203-b12253b56760f88617a3fe2a44e8aff4151230b1" title="js">js</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/aehlke/tag-it/commit/65d6fb4dad833bf490f2a7b27063ecd08f792ede" class="message" data-pjax="true" title="fix autocomplete css for zendesk theme">fix autocomplete css for zendesk theme</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2013-10-12T07:44:55Z" is="time-ago">October 12, 2013</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/aehlke/tag-it/blob/master/.gitignore" class="js-directory-link" id="a084b794bc0759e7a6b77810e01874f2-26ce01b3bf61ef018c1fd04ad5551697c0ddef9e" title=".gitignore">.gitignore</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/aehlke/tag-it/commit/ffafbd43b08b8c6451a5363d273b1441b09a50f0" class="message" data-pjax="true" title="clean up the examples, and allow using without jQuery UI CSS">clean up the examples, and allow using without jQuery UI CSS</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2012-12-10T23:40:49Z" is="time-ago">December 10, 2012</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/aehlke/tag-it/blob/master/LICENSE" class="js-directory-link" id="9879d6db96fd29134fc802214163b95a-01ca094a2bf42464d4b8e52ad9b233ca16885e26" title="LICENSE">LICENSE</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/aehlke/tag-it/commit/fec2a9efa6ace734816d2e38061bfc5e87f98582" class="message" data-pjax="true" title="add text of MIT license">add text of MIT license</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2011-05-11T04:38:14Z" is="time-ago">May 11, 2011</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/aehlke/tag-it/blob/master/Makefile" class="js-directory-link" id="b67911656ef5d18c4ae36cb6741b7965-fd46bdcf407108c24f3fc1041c66d5d61d85f632" title="Makefile">Makefile</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/aehlke/tag-it/commit/9afa0a829ba0cf3e676b9c61a352629c692cbcb6" class="message" data-pjax="true" title="use makefile instead of individual scripts">use makefile instead of individual scripts</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2012-12-11T21:37:33Z" is="time-ago">December 11, 2012</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/aehlke/tag-it/blob/master/README.markdown" class="js-directory-link" id="0a369498a5a8db3ac8fa606b544c9810-7e8569bd4a039e2bcecda29486485e52bcfcb7c5" title="README.markdown">README.markdown</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/aehlke/tag-it/commit/92587260aa9dca5c207925dba0a215b78decd8cc" class="message" data-pjax="true" title="Fixed typo">Fixed typo</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2013-08-29T19:29:30Z" is="time-ago">August 29, 2013</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/aehlke/tag-it/blob/master/examples.html" class="js-directory-link" id="4d4ae5806e55eb94637fcaeae0ff9c2b-901132165d90aad523df21f6d3f5c25049e19121" title="examples.html">examples.html</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/aehlke/tag-it/commit/65d6fb4dad833bf490f2a7b27063ecd08f792ede" class="message" data-pjax="true" title="fix autocomplete css for zendesk theme">fix autocomplete css for zendesk theme</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2013-10-12T07:44:55Z" is="time-ago">October 12, 2013</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/aehlke/tag-it/blob/master/prototype.js" class="js-directory-link" id="7d54d34e6c1f148bd2b4e31bb34f8a8f-a5d311b33ad9bd9fc98e237bcb65c504647928c7" title="prototype.js">prototype.js</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/aehlke/tag-it/commit/ec8d4750792aab033df5b2a816ce6595bf781bb6" class="message" data-pjax="true" title="Extracted the js prototype from the README file.">Extracted the js prototype from the README file.</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2013-03-10T17:01:35Z" is="time-ago">March 10, 2013</time></span>
+      </td>
+    </tr>
+</tbody>
+
+    </table>
+  </div>
+
+
+  <div id="readme" class="clearfix announce instapaper_body markdown">
+    <span class="name">
+      <span class="octicon octicon-book"></span>
+      README.markdown
+    </span>
+
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+<a name="user-content-tag-it-a-jquery-ui-plugin" class="anchor" href="#tag-it-a-jquery-ui-plugin"><span class="octicon octicon-link"></span></a>Tag-it: a jQuery UI plugin</h1>
+
+<p>Tag-it is a simple and configurable tag editing widget with autocomplete support.</p>
+
+<p><a href="http://aehlke.github.com/tag-it/">Homepage</a></p>
+
+<h2>
+<a name="user-content-demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p><a href="https://camo.githubusercontent.com/d700cc5a313d0dfb98450132b62e1da0fd727ef1/687474703a2f2f6165686c6b652e6769746875622e636f6d2f7461672d69742f5f7374617469632f73637265656e73686f742e706e67" target="_blank"><img src="https://camo.githubusercontent.com/d700cc5a313d0dfb98450132b62e1da0fd727ef1/687474703a2f2f6165686c6b652e6769746875622e636f6d2f7461672d69742f5f7374617469632f73637265656e73686f742e706e67" alt="Screenshot" data-canonical-src="http://aehlke.github.com/tag-it/_static/screenshot.png" style="max-width:100%;"></a></p>
+
+<p>Check the <a href="http://aehlke.github.com/tag-it/examples.html">examples.html</a> for several demos and the <a href="http://aehlke.github.com/tag-it/prototype.js">prototype.js</a> file for a JavaScript prototype with all options and events.</p>
+
+<h2>
+<a name="user-content-usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>First, load <a href="http://jquery.com/">jQuery</a> (v1.4 or greater), <a href="http://jqueryui.com/">jQuery UI</a> (v1.8 or greater), and the plugin:</p>
+
+<pre><code>&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="js/tag-it.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>If you're using a custom jQuery UI build, it must contain the Core, Widget, Position, and Autocomplete components. The Effects Core with "Blind" and "Highlight" Effect components are optional, but used if available.</p>
+
+<p>The plugin requires either a jQuery UI theme or a Tag-it theme to be present, as well as its own included base CSS file (<a href="http://github.com/aehlke/tag-it/raw/master/css/jquery.tagit.css">jquery.tagit.css</a>). Here we use the Flick theme as an example:</p>
+
+<pre><code>&lt;link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css"&gt;
+&lt;link href="css/jquery.tagit.css" rel="stylesheet" type="text/css"&gt;
+</code></pre>
+
+<p>Now, let's attach it to an existing <code>&lt;ul&gt;</code> box:</p>
+
+<pre><code>&lt;script type="text/javascript"&gt;
+    $(document).ready(function() {
+        $("#myTags").tagit();
+    });
+&lt;/script&gt;
+
+&lt;ul id="myTags"&gt;
+    &lt;!-- Existing list items will be pre-added to the tags --&gt;
+    &lt;li&gt;Tag1&lt;/li&gt;
+    &lt;li&gt;Tag2&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>This will turn the list into a tag-it widget. There are several other possible configurations and ways to instantiate the widget, including one that uses a single comma-delimited <code>input</code> field rather than one per tag, so see the <strong>Options</strong> documentation below as well as the <a href="http://aehlke.github.com/tag-it/examples.html">examples page</a> (and its source) which demonstrates most of them, as well as the Tag-it Zendesk theme used in the screenshot above.</p>
+
+<h2>
+<a name="user-content-theming" class="anchor" href="#theming"><span class="octicon octicon-link"></span></a>Theming</h2>
+
+<p>Tag-it is as easily themeable as any jQuery UI widget, using your own theme made with <a href="http://jqueryui.com/themeroller/">Themeroller</a>, or one of the jQuery UI <a href="http://jqueryui.com/themeroller/#themeGallery">premade themes</a>. The old ZenDesk-like theme is included as an optional CSS file (<a href="http://github.com/aehlke/tag-it/raw/master/css/tagit.ui-zendesk.css">tagit.ui-zendesk.css</a>).</p>
+
+<h2>
+<a name="user-content-options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<p>Tag-it accepts several options to customize its behaviour:</p>
+
+<h3>
+<a name="user-content-fieldname-string" class="anchor" href="#fieldname-string"><span class="octicon octicon-link"></span></a>fieldName (String)</h3>
+
+<p>Each tag's hidden input field will have this name.
+If you're using PHP, you may want to use something like <code>itemName[fieldName][]</code> for this option's value.</p>
+
+<pre><code>$("#myTags").tagit({
+    fieldName: "skills"
+});
+</code></pre>
+
+<p>Defaults to <em>tags</em>.</p>
+
+<h3>
+<a name="user-content-availabletags-array" class="anchor" href="#availabletags-array"><span class="octicon octicon-link"></span></a>availableTags (Array)</h3>
+
+<p>Used as source for the autocompletion, unless <strong>autocomplete.source</strong> is overridden.</p>
+
+<pre><code>$("#myTags").tagit({
+    availableTags: ["c++", "java", "php", "javascript", "ruby", "python", "c"]
+});
+</code></pre>
+
+<p>If you define your own <strong>autocomplete.source</strong>, this option is unused (unless you choose to reference it yourself from your custom <strong>autocomplete.source</strong> of course.)</p>
+
+<p>Defaults to an empty array <em>[]</em>.</p>
+
+<h3>
+<a name="user-content-autocomplete-object" class="anchor" href="#autocomplete-object"><span class="octicon octicon-link"></span></a>autocomplete (Object)</h3>
+
+<p>Allows overriding the <code>source</code> and <code>select</code> options that are set by default,
+as well as adding any other options you want to pass to the jQuery UI Autocomplete widget, such as <code>minLength</code> or <code>delay</code>.</p>
+
+<p>The <code>autocomplete.source</code> should be overridden if you want to use custom autocompletion sources, like an Ajax / XHR response.</p>
+
+<p>For example:</p>
+
+<pre><code>$("#myTags").tagit({
+    autocomplete: {delay: 0, minLength: 2}
+});
+</code></pre>
+
+<p>The default <code>autocomplete.source</code> function filters the strings in <strong>availableTags</strong> and subtracts the already assigned tags. It also positions autocomplete underneath tag input. See the full list of available options <a href="http://jqueryui.com/demos/autocomplete/">here</a>.</p>
+
+<h3>
+<a name="user-content-showautocompleteonfocus-boolean" class="anchor" href="#showautocompleteonfocus-boolean"><span class="octicon octicon-link"></span></a>showAutocompleteOnFocus (boolean)</h3>
+
+<p>Shows autocomplete when the tag input first receives focus, before the user even types anything.</p>
+
+<p>If enabled, this will also make <strong>autocomplete.minLength</strong> default to <code>0</code> unless you override that, so that autocomplete can show up with a blank search.</p>
+
+<p>Defaults to <em>false</em>.</p>
+
+<h3>
+<a name="user-content-removeconfirmation-boolean" class="anchor" href="#removeconfirmation-boolean"><span class="octicon octicon-link"></span></a>removeConfirmation (boolean)</h3>
+
+<p>When removeConfirmation is enabled the user has to press the backspace key twice to remove the last tag.
+After the first keypress the last tag receives a <em>remove</em> css class which can be used to visually highlight the tag.</p>
+
+<p>Defaults to <em>false</em>.</p>
+
+<h3>
+<a name="user-content-casesensitive-boolean" class="anchor" href="#casesensitive-boolean"><span class="octicon octicon-link"></span></a>caseSensitive (boolean)</h3>
+
+<p>whether the duplication check should do a case sensitive check or not.</p>
+
+<p>Defaults to <em>true</em>.</p>
+
+<h3>
+<a name="user-content-allowduplicates-boolean" class="anchor" href="#allowduplicates-boolean"><span class="octicon octicon-link"></span></a>allowDuplicates (boolean)</h3>
+
+<p>Allows duplicate tags to be created.
+One implication of this is that <code>removeTagByLabel</code> will remove all tags which match the given label.</p>
+
+<p>Defaults to <em>false</em>.</p>
+
+<h3>
+<a name="user-content-allowspaces-boolean" class="anchor" href="#allowspaces-boolean"><span class="octicon octicon-link"></span></a>allowSpaces (boolean)</h3>
+
+<p>When allowSpaces is enabled the user is not required to wrap multi-word tags in quotation marks.
+For example, the user can enter <code>John Smith</code> instead of <code>"John Smith"</code>.</p>
+
+<p>Defaults to <em>false</em>.</p>
+
+<h3>
+<a name="user-content-readonly-boolean" class="anchor" href="#readonly-boolean"><span class="octicon octicon-link"></span></a>readOnly (boolean)</h3>
+
+<p>When enabled, tag-it just render tags. It disables the ability to edit tags.</p>
+
+<p>Defaults to <em>false</em>.</p>
+
+<h3>
+<a name="user-content-taglimit-integer" class="anchor" href="#taglimit-integer"><span class="octicon octicon-link"></span></a>tagLimit (integer)</h3>
+
+<p>Limits the total number of tags that can be entered at once. Note that if you use this option with preloaded data,
+it may truncate the number of preloaded tags. Set to <code>null</code> for unlimited tags. See the <strong>onTagLimitExceeded</strong>
+callback for customizing this behavior.</p>
+
+<p>Defaults to <em>null</em>.</p>
+
+<h3>
+<a name="user-content-singlefield-boolean" class="anchor" href="#singlefield-boolean"><span class="octicon octicon-link"></span></a>singleField (boolean)</h3>
+
+<p>When enabled, will use a single hidden field for the form, rather than one per tag.
+It will delimit tags in the field with <strong>singleFieldDelimiter</strong>.</p>
+
+<p>Defaults to <em>false</em>, unless Tag-it was created on an <code>input</code> element, in which case <strong>singleField</strong> will be overridden as true.</p>
+
+<h3>
+<a name="user-content-singlefielddelimiter-string" class="anchor" href="#singlefielddelimiter-string"><span class="octicon octicon-link"></span></a>singleFieldDelimiter (String)</h3>
+
+<p>Defaults to <em>","</em></p>
+
+<h3>
+<a name="user-content-singlefieldnode-domnode" class="anchor" href="#singlefieldnode-domnode"><span class="octicon octicon-link"></span></a>singleFieldNode (DomNode)</h3>
+
+<p>Set this to an input DOM node to use an existing form field.
+Any text in it will be erased on init. But it will be populated with the text of tags as they are created, delimited by <strong>singleFieldDelimiter</strong>.
+If this is not set, we create an input node for it, with the name given in <strong>fieldName</strong>.</p>
+
+<p>Defaults to <em>null</em>, unless Tag-it was created on an <code>input</code> element, in which case <strong>singleFieldNode</strong> will be overridden with that element.</p>
+
+<h3>
+<a name="user-content-tabindex-integer" class="anchor" href="#tabindex-integer"><span class="octicon octicon-link"></span></a>tabIndex (integer)</h3>
+
+<p>Optionally set a <em>tabindex</em> attribute on the <code>input</code> that gets created for tag-it user input.</p>
+
+<p>Defaults to <em>null</em></p>
+
+<h3>
+<a name="user-content-placeholdertext-string" class="anchor" href="#placeholdertext-string"><span class="octicon octicon-link"></span></a>placeholderText (String)</h3>
+
+<p>Optionally set a <em>placeholder</em> attribute on the <code>input</code> that gets created for tag-it user input.</p>
+
+<p>Defaults to <em>null</em></p>
+
+<h2>
+<a name="user-content-events" class="anchor" href="#events"><span class="octicon octicon-link"></span></a>Events</h2>
+
+<h3>
+<a name="user-content-beforetagadded-function-callback" class="anchor" href="#beforetagadded-function-callback"><span class="octicon octicon-link"></span></a>beforeTagAdded (function, Callback)</h3>
+
+<p>Can be used to add custom behaviour before the tag is added to the DOM.</p>
+
+<p>The function receives a null event, and an object containing the properties <code>tag</code>, <code>tagLabel</code>, and <code>duringInitialization</code>.</p>
+
+<p><code>duringInitialization</code> is a boolean indicating whether the tag was added during the initial construction of this widget,
+e.g. when initializing tag-it on an input with preloaded data. You can use this to tell whether the event was initiated by
+the user or by the widget's initialization.</p>
+
+<p>To cancel a tag from being added, simply return <code>false</code> in your event callback to bail out from adding the tag and stop propagation of the event.</p>
+
+<pre><code>$("#myTags").tagit({
+    beforeTagAdded: function(event, ui) {
+        // do something special
+        console.log(ui.tag);
+    }
+});
+</code></pre>
+
+<h3>
+<a name="user-content-aftertagadded-function-callback" class="anchor" href="#aftertagadded-function-callback"><span class="octicon octicon-link"></span></a>afterTagAdded (function, Callback)</h3>
+
+<p>Behaves the same as <strong>beforeTagAdded</strong> except that it fires after the tag has been added to the DOM.
+It too receives the <code>duringInitialization</code> parameter — see <strong>beforeTagAdded</strong> for details.</p>
+
+<h3>
+<a name="user-content-beforetagremoved-function-callback" class="anchor" href="#beforetagremoved-function-callback"><span class="octicon octicon-link"></span></a>beforeTagRemoved (function, Callback)</h3>
+
+<p>Can be used to add custom behaviour before the tag is removed from the DOM.</p>
+
+<p>To cancel a tag from being removed, simply return <code>false</code> in your event callback to bail out from removing the tag and stop propagation of the event.</p>
+
+<p>The function receives a null event, and an object with <code>tag</code> and <code>tagLabel</code> properties.</p>
+
+<pre><code>$("#myTags").tagit({
+    beforeTagRemoved: function(event, ui) {
+        // do something special
+        console.log(ui.tag);
+    }
+});
+</code></pre>
+
+<h3>
+<a name="user-content-aftertagremoved-function-callback" class="anchor" href="#aftertagremoved-function-callback"><span class="octicon octicon-link"></span></a>afterTagRemoved (function, Callback)</h3>
+
+<p>Behaves the same as <strong>beforeTagRemoved</strong> except that it fires after the tag has been removed from the DOM.</p>
+
+<h3>
+<a name="user-content-ontagexists-function-callback" class="anchor" href="#ontagexists-function-callback"><span class="octicon octicon-link"></span></a>onTagExists (function, Callback)</h3>
+
+<p>Triggered when attempting to add a tag that has already been added in the widget. The callback receives a null event,
+and an object containing the properties <code>existingTag</code> and <code>duringInitialization</code>, since technically you could try to preload
+duplicate tags during the widget initialization.</p>
+
+<p>If the <strong>allowDuplicates</strong> option is enabled, this will not be triggered.</p>
+
+<p>By default it will visually highlight the existing tag, unless you return <em>false</em> in your callback.</p>
+
+<h3>
+<a name="user-content-ontagclicked-function-callback" class="anchor" href="#ontagclicked-function-callback"><span class="octicon octicon-link"></span></a>onTagClicked (function, Callback)</h3>
+
+<p>Can be used to add custom behaviour when the tag is clicked.
+The function receives the click event and an objecting containing <code>tag</code> and <code>tagLabel</code> properties.</p>
+
+<pre><code>$("#myTags").tagit({
+    onTagClicked: function(event, ui) {
+        // do something special
+        console.log(ui.tag);
+    }
+});
+</code></pre>
+
+<h3>
+<a name="user-content-ontaglimitexceeded-function-callback" class="anchor" href="#ontaglimitexceeded-function-callback"><span class="octicon octicon-link"></span></a>onTagLimitExceeded (function, Callback)</h3>
+
+<p>Called when attempting to create a tag while the tag limit has already been reached. Receives a null event,
+and an object with the property <code>duringInitialization</code>. This can only be called if <strong>tagLimit</strong> is set.</p>
+
+<h2>
+<a name="user-content-methods" class="anchor" href="#methods"><span class="octicon octicon-link"></span></a>Methods</h2>
+
+<h3>
+<a name="user-content-assignedtags" class="anchor" href="#assignedtags"><span class="octicon octicon-link"></span></a>assignedTags()</h3>
+
+<p>Returns an array of the text values of all the tags currently in the widget.</p>
+
+<pre><code>$("#myTags").tagit("assignedTags");
+</code></pre>
+
+<h3>
+<a name="user-content-createtagtaglabel-additionalclass" class="anchor" href="#createtagtaglabel-additionalclass"><span class="octicon octicon-link"></span></a>createTag(tagLabel, additionalClass)</h3>
+
+<p>Adds new tag to the list. The <code>additionalClass</code> parameter is an optional way to add classes to the tag element.</p>
+
+<pre><code>$("#myTags").tagit("createTag", "brand-new-tag");
+</code></pre>
+
+<h3>
+<a name="user-content-preprocesstagfunction-callback" class="anchor" href="#preprocesstagfunction-callback"><span class="octicon octicon-link"></span></a>preprocessTag(function, Callback)</h3>
+
+<p>Set a function to be called before tag is created. Callback receives the
+value of the tag created.</p>
+
+<pre><code>// ensure all tags are capitalized
+$(#tag-it").tagit("preprocessTag", function(val) {
+  if (!val) { return ''; }
+  return val[0].toUpperCase() + val.slice(1, val.length);
+});
+// foo -&gt; Foo
+</code></pre>
+
+<h3>
+<a name="user-content-removetagbylabeltaglabel-animate" class="anchor" href="#removetagbylabeltaglabel-animate"><span class="octicon octicon-link"></span></a>removeTagByLabel(tagLabel, animate)</h3>
+
+<p>Finds the tag with the label <code>tagLabel</code> and removes it. If no such tag is found, it'll throw an exception.</p>
+
+<pre><code>$("#myTags").tagit("removeTagByLabel", "my-tag");
+</code></pre>
+
+<h3>
+<a name="user-content-removeall" class="anchor" href="#removeall"><span class="octicon octicon-link"></span></a>removeAll()</h3>
+
+<p>Clears the widget of all tags — removes each tag it contains, so the <strong>beforeTagRemoved</strong> / <strong>afterTagRemoved</strong> event callbacks (if set) will be called for each.</p>
+
+<pre><code>$("#myTags").tagit("removeAll");
+</code></pre>
+
+<h2>
+<a name="user-content-properties" class="anchor" href="#properties"><span class="octicon octicon-link"></span></a>Properties</h2>
+
+<h3>
+<a name="user-content-taginput" class="anchor" href="#taginput"><span class="octicon octicon-link"></span></a>tagInput</h3>
+
+<p>The <code>&lt;input&gt;</code> field which is used for entering new tags. It's a jQuery object, so you may use it to add a class or anything to it, e.g.:</p>
+
+<pre><code>$("#myTags").tagit("tagInput").addClass("fancy");
+</code></pre>
+
+<h2>
+<a name="user-content-authors" class="anchor" href="#authors"><span class="octicon octicon-link"></span></a>Authors</h2>
+
+<ul class="task-list">
+<li>
+<a href="http://github.com/levycarneiro">Levy Carneiro Jr.</a> <em>original author</em>
+</li>
+<li><a href="http://github.com/martinrehfeld">Martin Rehfeld</a></li>
+<li><a href="http://github.com/grobie">Tobias Schmidt</a></li>
+<li><a href="http://github.com/sskylar">Skylar Challand</a></li>
+<li>
+<a href="http://github.com/aehlke">Alex Ehlke</a> <em>current maintainer</em>
+</li>
+</ul><h2>
+<a name="user-content-license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>tag-it is released under the <a href="http://github.com/aehlke/tag-it/raw/master/LICENSE">MIT license</a>.</p></article>
+  </div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.07557s from github-fe138-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-51e3b077e56f2f3244290e430b8d05253607065b.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-93d86f92fbe0e0d33e67339780e369f6c90000f8.js" type="text/javascript"></script>
+      
+      
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>
+

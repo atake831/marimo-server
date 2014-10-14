@@ -1,0 +1,7 @@
+[% IF defined(entry) && defined(entry_type) %]
+    [% IF user_id == entry.user_id %]
+        <a href="/[% entry_type %]/detail/[% entry.id %]/edit">[% entry.title %]</a>
+    [% ELSE %]
+        <a href="/[% entry_type %]/detail/[% entry.id %]">[% entry.title %]</a>
+    [% END %]
+[% END %]

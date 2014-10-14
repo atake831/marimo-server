@@ -1,0 +1,33 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+お知らせ一覧
+
+<br>
+
+[% IF !no_entry %]
+    [% IF short_recipes.size() %]
+        <p>
+            500気になる！を超えたらくらく投稿があります！<br>
+            レシピを書いて詳細をシェアしましょう！
+        </p>
+        [% INCLUDE 'include/table/short_recipe_layout.tt' WITH entries = short_recipes, flag_notice = 1 %]
+        <br>
+        <br>
+    [% END %]
+    [% IF kininaru_short_recipes.size() %]
+
+    <p>
+        気になる！を押したらくらく投稿がのレシピが登録されました！<br>
+    </p>
+    [% INCLUDE 'include/table/short_recipe_layout.tt' WITH entries = kininaru_short_recipes, flag_notice = 1 %]
+    <br>
+    <br>
+    [% END %]
+[% END %]
+
+
+[% END %]

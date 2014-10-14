@@ -1,0 +1,7 @@
+[% IF defined(tag) && defined(entry_type) %]
+    [% IF entry_type == 'recipe' %]
+        <a href="/tag/[% tag.id %]/recipe">[% tag.name %]</a>
+    [% ELSE %]
+        <a href="/tag/[% tag.id %]/short_recipe">[% tag.name %]</a>
+    [% END %]
+[% END %]

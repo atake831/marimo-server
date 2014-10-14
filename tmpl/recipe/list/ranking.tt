@@ -1,0 +1,28 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+らくめしデイリーランキング
+
+<br>
+
+<a href="/recipe/list/new">新着順</a>
+<br>
+<p>[% target_day %]のランキング</p>
+[% IF defined(before_day) %]
+    <a href="/recipe/list/ranking/[% before_day %]"><<前の日</a>
+[% ELSE %]
+    <<前の日
+[% END %]
+[% IF defined(after_day) %]
+    <a href="/recipe/list/ranking/[% after_day %]">次の日>></a>
+[% ELSE %]
+    次の日>>
+[% END %]
+[% INCLUDE 'include/table/recipe_ranking_layout.tt' WITH entries = entries %]
+
+[% INCLUDE 'include/pager.tt' WITH pager=pager %]
+
+[% END %]

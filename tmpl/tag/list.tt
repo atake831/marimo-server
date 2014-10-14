@@ -1,0 +1,15 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+タグ一覧
+
+<br>
+
+[% INCLUDE 'include/table/tag_list_layout.tt' WITH entries = entries %]
+
+[% INCLUDE 'include/pager.tt' WITH pager=pager %]
+
+[% END %]

@@ -1,0 +1,120 @@
+[% WRAPPER 'include/layout.tt' %]
+
+らくめし！
+
+<br>
+
+らくらく投稿を読み込む
+<br>
+<form action="/recipe/create" method="GET">
+    <!--<select name="loaded_recipe_id" onchange="submit(this.form)">-->
+    <select name="loaded_recipe_id">
+        <option value="">新規登録</option>
+        [% FOR short_recipe IN short_recipes %]
+            [% IF short_recipe.id == short_recipe_loaded.id %]
+                <option selected value="[% short_recipe.id %]">[% short_recipe.title %]</option>
+            [% ELSE %]
+                <option value="[% short_recipe.id %]">[% short_recipe.title %]</option>
+            [% END %]
+        [% END %]
+    </select>
+    <input type="submit" />
+</form>
+
+<form class="form" action="/recipe/create/confirm" method="POST">
+
+    タイトル
+    [% IF defined(short_recipe_loaded) %]
+        [% short_recipe_loaded.title %]
+        <input type="hidden" name="title" value="[% short_recipe_loaded.title %]" />
+    [% ELSIF defined(user_input_values) %]
+        <input type="text" name="title" value="[% user_input_values.title %]" />
+    [% ELSE %]
+        <input type="text" name="title" />
+    [% END %]
+
+    <br>
+
+    [% IF defined(tags_text) %]
+        <input type="hidden" value="[% tags_text %]" name="tags" id="tag-input" />
+    [% ELSE %]
+        <input type="hidden" value="" name="tags" id="tag-input" />
+    [% END %]
+
+    <br>
+
+    調理時間
+    [% IF defined(short_recipe_loaded) %]
+        [% short_recipe_loaded.cooking_time_m * -1 %]分
+        <input type="hidden" name="cooking_time_m" value="[% short_recipe_loaded.cooking_time_m %]" />
+    [% ELSE %]
+        <select name="cooking_time_m">
+            [% FOR cooking_time IN [1..9] %]
+            <option 
+                [% IF defined(user_input_values) && user_input_values.cooking_time_m == cooking_time * -1 %]
+                    selected
+                [% END %] 
+                value="-[% cooking_time %]">[% cooking_time %]分</option>
+            [% END %]
+            <option 
+                [% IF defined(user_input_values) && user_input_values.cooking_time_m == -10 %]
+                    selected
+                [% END %] 
+                value="-10">10分以上</option>
+        </select>
+    [% END %]
+
+    <br>
+
+    洗い物の数 
+    <select name="num_washing_m">
+        [% FOR num_washing IN [1..9] %]
+            <option 
+                [% IF defined(user_input_values) && user_input_values.num_washing_m == num_washing * -1 %]
+                    selected
+                [% END %] 
+                value="-[% num_washing %]">[% num_washing %]分</option>
+        [% END %]
+        <option 
+            [% IF defined(user_input_values) && user_input_values.num_washing_m == -10 %]
+                selected
+            [% END %] 
+            value="-10">10個以上</option>
+    </select>
+    <br>
+    
+    材料
+    [% IF defined(user_input_values) %]
+        <textarea type="text" name="materials">[% user_input_values.materials %]</textarea>
+    [% ELSE %]
+        <textarea type="text" name="materials"></textarea>
+    [% END %]
+
+    <br>
+
+    調理方法
+    [% IF defined(user_input_values) %]
+        <textarea type="text" name="how_to_cook">[% user_input_values.how_to_cook %]</textarea>
+    [% ELSE %]
+        <textarea type="text" name="how_to_cook"></textarea>
+    [% END %]
+    
+    <br>
+
+    らくテク
+    [% IF defined(user_input_values) %]
+        <textarea type="text" name="rakuteku">[% user_input_values.rakuteku %]</textarea>
+    [% ELSE %]
+        <textarea type="text" name="rakuteku"></textarea>
+    [% END %]
+    <br>
+
+    [% IF defined(short_recipe_loaded) %]
+        <input type="hidden" name="id" value="[% short_recipe_loaded.id %]" />
+    [% END %]
+
+    <input class="submit" type="submit" value="投稿する" />
+
+</form>
+
+[% END %]

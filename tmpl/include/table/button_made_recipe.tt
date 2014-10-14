@@ -1,0 +1,11 @@
+[% IF defined(entry) %]
+    [% IF entry.flag_made_recipe %]
+        [% IF user_id == entry.user_id %]
+            <input type="button" onclick="location.href='/recipe/detail/[% entry.id %]/edit'" value="レシピを見る" /> 
+        [% ELSE %]
+            <input type="button" onclick="location.href='/recipe/detail/[% entry.id %]'" value="レシピを見る" /> 
+        [% END %]
+    [% ELSIF user_id == entry.user_id %]
+        <input type="button" onclick="location.href='/recipe/create?loaded_recipe_id=[% entry.id %]'" value="レシピを書く" /> 
+    [% END %]
+[% END %]

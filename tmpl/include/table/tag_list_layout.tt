@@ -1,0 +1,15 @@
+[% IF defined(entries) %]
+
+<table border="1">
+    [% FOR entry IN entries %]
+    <tr>
+        <td>
+            <a href="/tag/[% entry.id %]/recipe">[% entry.tag_name %]</a>
+            ( [% entry.count_tagged_recipes %] )
+        </td>
+    <tr>
+    [% END %]
+
+</table>
+
+[% END %]

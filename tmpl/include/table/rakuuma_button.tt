@@ -1,0 +1,18 @@
+[% IF defined(entry) %]
+    [% IF defined(user_id) %]
+        <div class="rakuuma">
+            <p name="rakuuma">[% recipe.rakuuma_point %]</p>
+            [% IF entry.flag_rakuuma %]
+                <button id="rakuuma" class="clicked">らくうま！</button>
+            [% ELSE %]
+                <button id="rakuuma" class="not_clicked">らくうま！</button>
+            [% END %]
+            <form action="" method="POST">
+                <input name="recipe_id" type="hidden" value="[% entry.id %]" />
+            </form>
+        </div>
+    [% ELSE %]
+        <p name="rakuuma">[% recipe.rakuuma_point %]</p>
+        <button onclick="location.href='/account/login'" class="not_clicked">らくうま！</button>
+    [% END %]
+[% END %]
