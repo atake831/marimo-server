@@ -140,6 +140,7 @@ CREATE TABLE IF NOT EXISTS map_for_daily_ranking_recipe (
     table_map               tinyint     unsigned NOT NULL, # 参照テーブルのマッピング
     PRIMARY KEY                         (newest_date, table_map)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8; 
+truncate table map_for_daily_ranking_recipe;
 
 CREATE TABLE IF NOT EXISTS daily_ranking_recipe_1 (
     day                     tinyint     unsigned NOT NULL, # 1~31:対象のランキングの日
